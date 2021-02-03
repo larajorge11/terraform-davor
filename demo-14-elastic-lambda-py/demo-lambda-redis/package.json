@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "redis": "*",
+    "uuid": "^3.3.2"
+  },
+  "name": "aws-nodejs-sample",
+  "description": "A simple AWS Lambda application illustrating usage of Node.js to access Elasticache Redis",
+  "version": "1.0.1",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Uday Sharma",
+  "license": "ISC"
+}

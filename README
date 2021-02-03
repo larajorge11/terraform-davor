@@ -1,0 +1,16 @@
+resource "aws_db_instance" "example" {
+  # ...
+  lifecycle {
+    prevent_destroy = true # no destruir cuando se aplique terraform destroy
+  }
+  timeouts {
+    create = "60m"
+    delete = "2h"
+  }
+}
+
+terraform plan -var-file tu_archivo.tfvars
+
+ .auto.tfvars => No es necesario colocar el -var-file , terraform lo toma de manera automatica
+
+
